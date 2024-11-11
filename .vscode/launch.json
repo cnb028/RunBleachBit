@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+<<<<<<< HEAD
+        {
+            "name": "PowerShell: Launch Current File",
+            "type": "PowerShell",
+=======
+        
+        {
+            "name": "CMD: Launch Current File",
+            "type": "cmd",
+>>>>>>> 1a8c3f9d5170ebcfebfb3f0c3986f8b8f4b38648
+            "request": "launch",
+            "script": "${file}",
+            "args": []
+        }
+    ]
+}

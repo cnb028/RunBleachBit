@@ -15,11 +15,11 @@ Set-Location "C:\Program Files (x86)\BleachBit"
 
 # Execute BleachBit with the specified options and capture the output
 $output = Start-Process -FilePath "bleachbit_console.exe" `
-                         -ArgumentList "-c adobe_reader.* amule.* brave.* chromium.* deepscan.* discord.* filezilla.* firefox.* flash.* gimp.* google_chrome.* google_earth.* google_toolbar.* gpodder.* hexchat.* hippo_opensim_viewer.* internet_explorer.* java.* libreoffice.* microsoft_edge.* microsoft_office.* midnightcommander.* miro.* octave.* openofficeorg.* opera.* paint.* palemoon.* pidgin.* realplayer.* safari.* screenlets.* seamonkey.* secondlife_viewer.* silverlight.* skype.* slack.* smartftp.* system.* teamviewer.* thunderbird.* tortoisesvn.* vim.* vlc.* vuze.* warzone2100.* waterfox.* winamp.* windows_defender.* windows_explorer.* windows_media_player.* winrar.* winzip.* wordpad.* yahoo_messenger.* zoom.*" `
+                         -ArgumentList "-c adobe_reader.* deepscan.* discord.* filezilla.* firefox.* google_chrome.* google_toolbar.* microsoft_office.* paint.* screenlets.* system.* winamp.* windows_defender.* windows_explorer.* windows_media_player.* winrar.* winzip.* wordpad.* zoom.*" `
                          -NoNewWindow -RedirectStandardOutput "output.txt" -Wait
 
 # Read the output from the file
-$outputResults = Get-Content "output.txt"
+$outputResults = Get-Content $output
 
 # Display the results
 Write-Host "BleachBit Results:`n"
