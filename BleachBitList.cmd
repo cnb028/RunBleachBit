@@ -6,14 +6,15 @@
 
 @echo off
 
+::Change Console Encoding
+chcp 65001
+
+::Set Pythonioencoding Environment Variable
+set Pythonioencoding=UTF-8
+
 ::Change to the Bleachbit installation directory
 cd "C:\Program Files (x86)\BleachBit"
 
 ::Execute Bleachbit with the specificed operations
 
 bleachbit_console.exe -l
-<<<<<<< HEAD
-=======
-
-if exist C:\Program Files (x86)\BleachBit\library.zip\win_unicode_console\__init__.py:31 > nul 2>&1
->>>>>>> 1a8c3f9d5170ebcfebfb3f0c3986f8b8f4b38648
