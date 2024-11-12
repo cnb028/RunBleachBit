@@ -42,4 +42,3 @@ bleachbit_console.exe -overwrite windows_defender.* -s
 bleachbit_console.exe -overwrite windows_media_player.* -s
 bleachbit_console.exe -overwrite windows_explorer.* -s
 bleachbit_console.exe -overwrite wordpad.* -s
-
